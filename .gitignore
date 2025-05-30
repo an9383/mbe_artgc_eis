@@ -1,0 +1,62 @@
+*.swp
+*.*~
+project.lock.json
+.DS_Store
+*.pyc
+nupkg/
+
+# Visual Studio Code
+.vscode
+
+# Rider
+.idea
+
+# User-specific files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+build/
+bld/
+[Bb]in/
+[Oo]bj/
+[Oo]ut/
+msbuild.log
+msbuild.err
+msbuild.wrn
+
+# Visual Studio 2015
+.vs/
+Sources/packages/
+Sources/PLC.Driver.XGTEnet/Cnet/
+Sources/PLC.Driver.XGTEnet/NamespaceDoc.cs
+Sources/PLC.Driver.XGTEnet/Channels/StreamChannel.cs
+Sources/PLC.Driver.XGTEnet/Channels/TcpChannelProvider.cs
+Sources/PLC.Driver.XGTEnet/Channels/UdpChannel.cs
+Sources/PLC.Driver.XGTEnet/Channels/UdpChannelProvider.cs
+Sources/PLC.Driver.XGTEnet/Common/NamespaceDoc.cs
+Sources/PLC.Driver.XGTEnet/Common/Channels/ChannelProvider.cs
+Sources/PLC.Driver.XGTEnet/Common/Logging/CollectionChannelLogger.cs
+Sources/PLC.Driver.XGTEnet/Common/Logging/ConsoleChannelLogger.cs
+Sources/PLC.Driver.XGTEnet/Common/Logging/StreamChannelLogger.cs
+Sources/PLC.Driver.XGTEnet/FEnet/Simulation/FEnetSimulationService.cs
+Sources/MBE.Driver.LSElectric/Cnet/
+Sources/MBE.Driver.LSElectric/NamespaceDoc.cs
+Sources/MBE.Driver.LSElectric/Channels/StreamChannel.cs
+Sources/MBE.Driver.LSElectric/Channels/TcpChannelProvider.cs
+Sources/MBE.Driver.LSElectric/Channels/UdpChannel.cs
+Sources/MBE.Driver.LSElectric/Channels/UdpChannelProvider.cs
+Sources/MBE.Driver.LSElectric/Common/NamespaceDoc.cs
+Sources/MBE.Driver.LSElectric/Common/Channels/ChannelProvider.cs
+Sources/MBE.Driver.LSElectric/Common/Logging/CollectionChannelLogger.cs
+Sources/MBE.Driver.LSElectric/Common/Logging/ConsoleChannelLogger.cs
+Sources/MBE.Driver.LSElectric/Common/Logging/StreamChannelLogger.cs
+Sources/MBE.Driver.LSElectric/FEnet/Simulation/FEnetSimulationService.cs

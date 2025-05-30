@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="JsonServices" Version="0.1.10" />
+    <PackageReference Include="JsonServices.Serialization.ServiceStack" Version="0.1.10" />
+    <PackageReference Include="JsonServices.Transport.Fleck" Version="0.1.10" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\KR.MBE.CommonLibrary\KR.MBE.CommonLibrary.csproj" />
+    <ProjectReference Include="..\Middleware.ActiveMQ\Middleware.ActiveMQ.csproj" />
+  </ItemGroup>
+
+</Project>

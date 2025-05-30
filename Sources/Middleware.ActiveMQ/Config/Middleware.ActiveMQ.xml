@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Configuration>
+	<!--HostIP>172.30.1.26</HostIP-->
+	<HostIP>127.0.0.1</HostIP>
+    <Port>61616</Port>
+    <CreateContextType>OneTime</CreateContextType>
+    <ConnectionFactoryName>tmsConnection</ConnectionFactoryName>
+	<QueueName>-</QueueName> <!--Consumer.TESTsvr.VirtualTopic.ecsTopic-->
+    <TopicName>ecsTopic</TopicName>
+	<EisTopicName>eisTopic</EisTopicName>
+	<MonitorTopicName>ecsMonitorTopic</MonitorTopicName>
+	<ReplyTimeOut>30</ReplyTimeOut>
+	<!-- Sec -->
+	<ClientID>UI</ClientID>
+	<ReplySubjectPrefix>PROD.KR.MBE.EIS</ReplySubjectPrefix>
+	<TargetSubject>PROD.KR.MBE.ECS</TargetSubject>
+	<MonitoringTargetSubject>PROD.KR.MBE.MON</MonitoringTargetSubject>
+	<InterfaceStructure>JSON</InterfaceStructure>
+</Configuration>
+
+<!-- 운영  logo2021!@
+<?xml version="1.0" encoding="utf-8"?>
+<Configuration>
+  <HostIP>115.71.14.62</HostIP>
+  <Port>61616</Port>
+  <CreateContextType>OneTime</CreateContextType>
+  <ConnectionFactoryName>tmsConnection</ConnectionFactoryName>
+  <QueueName>tmsQueue</QueueName>
+  <TopicName>tmsTopic</TopicName>
+  <ReplyTimeOut>30000</ReplyTimeOut>
+  <ClientID>UI</ClientID>
+  <ReplySubjectPrefix>PROD.KR.ITIER.TMS</ReplySubjectPrefix>
+  <TargetSubject>PROD.KR.ITIER.TMS.TMSsvr</TargetSubject>
+</Configuration>
+-->
+
+<!--  개발
+<?xml version="1.0" encoding="utf-8"?>
+<Configuration>
+    <HostIP>127.0.0.1</HostIP>
+    <Port>61616</Port>
+    <CreateContextType>OneTime</CreateContextType>
+    <ConnectionFactoryName>tmsConnection</ConnectionFactoryName>
+    <QueueName>tmsQueue</QueueName>
+    <TopicName>tmsTopic</TopicName>
+    <ReplyTimeOut>30000</ReplyTimeOut>
+    <ClientID>UI</ClientID>
+    <ReplySubjectPrefix>PROD.KR.ITIER.TMS</ReplySubjectPrefix>
+    <TargetSubject>PROD.KR.ITIER.TMS.TESTsvr</TargetSubject>
+</Configuration>
+-->

@@ -1,0 +1,148 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <OutputType>Library</OutputType>
+    <SccProjectName></SccProjectName>
+    <SccLocalPath></SccLocalPath>
+    <SccAuxPath></SccAuxPath>
+    <SccProvider></SccProvider>
+    <SubsystemVersion>5.01</SubsystemVersion>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImportWindowsDesktopTargets>true</ImportWindowsDesktopTargets>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>..\OUTPUT\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <OutputPath>..\OUTPUT\Release\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Update="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Update="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="CustomControl\itierButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="CustomControl\itierStatus.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="CustomControl\itierInventory.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="CustomControl\itierGrid.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="CustomControl\itierTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="CustomControl\itierEnumComboBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="CustomControl\itierTreeEquipment.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="CustomControl\itierStatusLabel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="CustomControl\ucEquipmentItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="CustomControl\VerticalTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="TabControl\TabCtlEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="TabControl\TabPageEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="TreeView\TreeViewBound.cs">
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\KR.MBE.CommonLibrary\KR.MBE.CommonLibrary.csproj" />
+    <ProjectReference Include="..\KR.MBE.Data\KR.MBE.Data.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\24X20-대기.png" />
+    <Content Include="Resources\24X20-삭제.png" />
+    <Content Include="Resources\24X20-수정.png" />
+    <Content Include="Resources\24X20-신규.png" />
+    <Content Include="Resources\24X20-완료.png" />
+    <Content Include="Resources\IconBay.png" />
+    <Content Include="Resources\IconBlock.png" />
+    <Content Include="Resources\IconCCTV.png" />
+    <Content Include="Resources\IconCrane.png" />
+    <Content Include="Resources\IconDelete.png" />
+    <Content Include="Resources\iconExcel.png" />
+    <Content Include="Resources\iconInsert.png" />
+    <Content Include="Resources\IconJob.png" />
+    <Content Include="Resources\IconParameter.png" />
+    <Content Include="Resources\iconPrinter.png" />
+    <Content Include="Resources\IconRCS.png" />
+    <Content Include="Resources\IconRow.png" />
+    <Content Include="Resources\iconSave.png" />
+    <Content Include="Resources\iconSearch.png" />
+    <Content Include="Resources\IconSite.png" />
+    <Content Include="Resources\iconsSave.png" />
+    <Content Include="Resources\IconStepJob.png" />
+    <Content Include="Resources\IconTier.png" />
+    <Content Include="Resources\IconUndo.png" />
+    <Content Include="Resources\vehicle.png" />
+    <Content Include="Resources\wait.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.CSharp" Version="4.7.0" />
+    <PackageReference Include="System.Data.DataSetExtensions" Version="4.5.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="CustomControl\ColorEditor.cs" />
+    <Compile Remove="CustomControl\CTraceOuline.cs" />
+    <Compile Remove="CustomControl\CustomControl.cs" />
+    <Compile Remove="CustomControl\itierBayInventory.cs" />
+    <Compile Remove="CustomControl\itierBayInventory.Designer.cs" />
+    <Compile Remove="CustomControl\itierContainer.cs" />
+    <Compile Remove="CustomControl\itierContainer.Designer.cs" />
+    <Compile Remove="CustomControl\ShapeTypeEditor.cs" />
+    <Compile Remove="CustomControl\ucBay.cs" />
+    <Compile Remove="CustomControl\ucBay.Designer.cs" />
+    <Compile Remove="CustomControl\ucBayInfo.cs" />
+    <Compile Remove="CustomControl\ucBayInfo.Designer.cs" />
+    <Compile Remove="CustomControl\ucBlock.cs" />
+    <Compile Remove="CustomControl\ucBlock.Designer.cs" />
+    <Compile Remove="CustomControl\ucContainer.cs" />
+    <Compile Remove="CustomControl\ucContainer.Designer.cs" />
+    <Compile Remove="CustomControl\ucContainer_30 .cs" />
+    <Compile Remove="CustomControl\ucContainer_30 .Designer.cs" />
+    <Compile Remove="CustomControl\ucHoist.cs" />
+    <Compile Remove="CustomControl\ucHoist.Designer.cs" />
+    <Compile Remove="CustomControl\ucInventory.cs" />
+    <Compile Remove="CustomControl\ucInventory.Designer.cs" />
+    <Compile Remove="CustomControl\ucSpreader.cs" />
+    <Compile Remove="CustomControl\ucSpreader.Designer.cs" />
+    <Compile Remove="CustomControl\ucTrolley.cs" />
+    <Compile Remove="CustomControl\ucTrolley.Designer.cs" />
+    <EmbeddedResource Remove="CustomControl\ColorEditor.resx" />
+    <EmbeddedResource Remove="CustomControl\CustomControl.resx" />
+    <EmbeddedResource Remove="CustomControl\itierBayInventory.resx" />
+    <EmbeddedResource Remove="CustomControl\itierContainer.resx" />
+    <EmbeddedResource Remove="CustomControl\ShapeTypeEditor.resx" />
+    <EmbeddedResource Remove="CustomControl\ucBay.resx" />
+    <EmbeddedResource Remove="CustomControl\ucBayInfo.resx" />
+    <EmbeddedResource Remove="CustomControl\ucBlock.resx" />
+    <EmbeddedResource Remove="CustomControl\ucContainer.resx" />
+    <EmbeddedResource Remove="CustomControl\ucContainer_30 .resx" />
+    <EmbeddedResource Remove="CustomControl\ucHoist.resx" />
+    <EmbeddedResource Remove="CustomControl\ucInventory.resx" />
+    <EmbeddedResource Remove="CustomControl\ucSpreader.resx" />
+    <EmbeddedResource Remove="CustomControl\ucTrolley.resx" />
+  </ItemGroup>
+</Project>
