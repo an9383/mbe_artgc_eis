@@ -29,7 +29,7 @@ namespace Middleware.ActiveMQ
     {
         private bool m_debugLog = false;
         //private string host = "192.168.0.14";
-        private string m_sHostIP = "";
+        private string m_sHostIP = "127.0.0.1";
 
         private int m_iPort = 7001;
         private string m_sConnectionFacatoryName = "jmsConnection";
